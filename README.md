@@ -9,7 +9,7 @@ You can use this image with the following command
 ```bash
 docker run --name my-smartdns -d \
     -p 53:53/udp \
-    -v /path/to/your/smartdns.conf:/usr/local/smartdns/conf/smartdns.conf \
+    -v /path/to/your/smartdns.conf:/etc/smartdns/smartdns.conf \
     laboys/smartdns
 ```
 
@@ -19,6 +19,7 @@ docker logs --tail=100 -f my-smartdns
 ```
 
 
-### Configuration 
+### License
 
-Unlike the official configuration, the default configuration file for this image is located in `/usr/local/smartdns/conf/smartdns.conf`.
+Released under the [MIT License](LICENSE)
+
